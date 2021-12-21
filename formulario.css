@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+.body{ /*adptar de acordo com a tela do eletronico*/
+  min-width: 320px;
+    max-width: 100%;
+}
+
+label, input {/*PARTE DA PORCENTAGEM */
+  position: relative;
+  width: 78px;
+  }
+  
+  label::after {
+  content: '' attr(unit);
+  position: absolute;
+  top: 3px;/*lugar da porcentagem para cima/baixo */
+  left: 50px;/*lugar da porcentagem na caixinha */
+  font-family: arial, helvetica, sans-serif;
+  font-size: 13px;/*Desenho da porcentagem na caixinha do valor */
+  color: rgba(12, 12, 12, 0.6);/* cor do simmolo da porcentagem  */
+  font-weight: bold;
+}
+
+*{/*caracter especial*/
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.rodandoImagens{/*p/ n aparecer a barra de rolagem em baixo*/
+    width: 100%; 
+    overflow:hidden; 
+    height: 100%;
+}
+
+article{/*pg por pates*/
+    float:left; 
+    width:20%;
+} 
+
+body{/*corpo*/
+  font-family: 'Pacifico', cursiva;
+  background-color: #ffffff;
+  background-repeat: repeat;  
+}
+
+nav{ /*menus*/
+	background: #400101;
+	height: 150px; 
+	width: 100%;
+}
+
+nav ul{ /*menus na parte de cima links*/
+  margin-right: 30px;
+  display: inline-block;
+}
+
+nav ul li{/*menus na parte de cima*/
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+}
+
+nav ul li a{/*menus na parte de cima dos links*/
+	color:#8C7268;
+	font-size: 25px;
+	padding: 9px 10px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+label.logo{/*parte da logo menu principal*/
+	color: #A65161;
+	font-size: 60px;
+	line-height: 80px;
+	padding:  650px;/*centrazila a logo no meio*/
+	font-weight: bold;
+	margin: 0 60px;
+}
+
+#rodape { /*rodapé*/
+  clear: both;
+  text-align: center;
+  padding: 15px;
+	background: #8C7268;
+}
+
+ 
+/* Campos do formulário */
+fieldset.elist, input[type="text"], textarea, select, option, fieldset.elist ul, fieldset.elist > legend, fieldset.elist input[type="text"], fieldset.elist > legend:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* área para comentário */
+textarea {
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+}
+
+/* cor das bordas e aonde será colocado a cor*/
+textarea, input[type="text"], fieldset.elist ul, select, fieldset.elist > legend {
+  border: 2px #cccccc solid;
+  border-radius: 10px;
+}
+
+/* Opções para selecionar na 3° caixinha */
+input[type="text"], fieldset.elist, select, fieldset.elist > legend {
+  height: 32px;
+  font-family: Tahoma;
+  font-size: 14px;
+}
+
+/* Opção do 3° quadrado para entrega */
+input[type="text"] {
+  padding: 0 20px;
+}
+
+/* Opções para selecionar a 2° caixinha */
+select {
+  padding: 4px 10px;
+}
+
+
+option:not(:checked), textarea:focus {
+  background-color: #ffcccc;
+}
+
+/* tamanho da caixinha numero 3*/
+fieldset.elist > legend:after, fieldset.elist label {
+  height: 28px;
+}
+
+/* cor verde e tamanho da caixinha numero 3*/
+input[type="text"], fieldset.elist {
+  width: 316px;
+}
+
+/* bordar ao redor do formulário */
+fieldset {
+  border: 2px #1d2020 solid;
+  border-radius: 10px;
+}
+
+/* Editable [pseudo]select (i.e. fieldsets with [class=elist]) */
+fieldset.elist {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* cor de fundo/configurações para a caixinha 3*/
+fieldset.elist ul {
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+/*para ficar encolhido as opções da caixinha */
+fieldset.elist label {
+    display: none;
+    width: 100%;
+}
+
+fieldset.elist > legend:after {
+  width: 20px;
+  content: "\2335";
+  float: right;
+  text-align: center;
+  border-left: 2px #cccccc solid;
+  font-style: normal;
+  cursor: default;
+}
+
+fieldset.elist ul input[type="radio"] {
+  display: none;
+}
+
+fieldset.elist:hover input[type="radio"]:checked ~ label {
+  width: 100%;
+}
+
+fieldset.elist:hover label {
+  display: block;
+  height: 100%;
+} 

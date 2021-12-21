@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.Banners{
+    height:700px; 
+    width:center;
+}
+
+.body{ /*adptar de acordo com a tela do eletronico*/
+	min-width: 320px;
+    max-width: 100%;
+}
+
+
+*{/*caracter especial*/
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.rodandoImagens{/*p/ n aparecer a barra de rolagem em baixo NÃO FUNCIONA*/
+    width: 100%; 
+    overflow:hidden; 
+    height: 100%;
+}
+
+article{/*pg por pates*/
+    float:left; 
+    width:20%;
+} 
+
+body{/*corpo*/
+	font-family: 'Pacifico', cursiva;
+	background-color: #ffffff;
+	background-repeat: repeat;	
+  overflow-x: hidden; /* para tirar a barra de rolagem de baixo*/
+}
+
+nav{ /*menus*/
+	background: #400101;
+	height: 150px; 
+	width: 100%;
+}
+nav ul{ /*menus na parte de cima links*/
+	margin-right: 30px;
+	display: inline-block;
+}
+
+nav ul li{/*menus na parte de cima*/
+	display:inline-table;
+	line-height: 30px;
+	margin: 0 5px;
+}
+
+nav ul li a{/*menus na parte de cima dos links*/
+	color:#8C7268;
+	font-size: 25px;
+	padding: 9px 10px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+label.logo{/*parte da logo menu principal*/
+	color: #A65161;
+	font-size: 60px;
+	line-height: 80px;
+	padding:  650px;/*centrazila a logo no meio*/
+	font-weight: bold;
+	margin: 0 60px;
+}
+
+#rodape { /*rodapé*/
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	background: #8C7268;
+}
+
+
+.row::after {/*os pontos são pseudoelementos= elecionar algumas áreas internas de um elemento HTML e customizá-las através de propriedades*/
+  content: "";
+  clear: both;
+  display: table;
+}
+
+p {/* paragrafos com bordas */
+  color: black;
+  text-indent: 30px;
+  font-size: 30px;
+  border: 5px solid #000000;
+  padding: 40px;
+  margin: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  border-radius: 50px;
+}
+
+.coluna_contatos{
+  float: left;
+  width: 25%;
+ }
+ 
+.row_contatos::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+h1{/* titulo1 */
+	font-family:Brush Script MT, Brush Script Std, cursive;
+	font-size: 75px;
+}
+
+h2{/* titulo2 */
+  font-family: 'Cookie', cursiva;
+}
+
+.button1 { /* BOTAO da HOME/FEMININAS/MASCULINAS */
+  color: rgb(2, 1, 1);/* Cor das palavras */
+  background-color: rgba(195, 108, 137, 0.794);/* cor de dentro do botão*/
+  padding: 10px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: outset rgb(149, 104, 132); /* cor ao redor do botão */
+  border-radius: 20px
+}
+
+.button2{ /* BOTÃO */
+	color: black;
+	background-color: rgba(134, 9, 50, 0.794);
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	margin: 2px 2px;
+	cursor: pointer;
+	border: 2px outset black;
+	border-radius: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .coluna{
+    float: left;
+    width: 32.50%;
+    height: 500px;   
+  }
